@@ -2,13 +2,13 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 const bodyRef = document.querySelector('body');
-console.log(bodyRef);
+// console.log(bodyRef);
 
 const buttonRef = document.querySelector('.change-color');//.value;
-console.log(buttonRef);
+// console.log(buttonRef);
 
 const textColorRef = document.querySelector('.color');//.value;
-console.log(buttonRef);
+// console.log(buttonRef);
 
 buttonRef.addEventListener('click', onChangeColor);
 
