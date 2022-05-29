@@ -23,17 +23,17 @@ function createNun(){
 	console.log(inputNum.value);
 	return inputNum.value;
 	}
-	let size = 30;
+	const size = 30;
 function createBoxes(){
 	 
-	console.log(inputNum.value);
+	// console.log(inputNum.value);
 	for(let i = 0; i< inputNum.value; i++){
 		const divN = document.createElement("div");
-		size = `${30*(i+1)}px`;
-		console.log("size",size);
+		let siz = `${Number(size)*(i+1)}px`;
+		console.log("size",siz);
 	divN.style.backgroundColor = getRandomHexColor();
-divN.style.height = size;
-divN.style.width = size;
+divN.style.height = siz;
+divN.style.width = siz;
 console.log(divN);
 collection.append(divN);
 	}
@@ -42,7 +42,7 @@ console.log(collection);
 	}
 
 function destroyBoxes(){
-	collection.remove();
+	collection.innerHTML = '';
 	}
 
 // console.log(inputNum.value);			
